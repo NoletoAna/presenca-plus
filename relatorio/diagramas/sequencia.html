@@ -1,0 +1,63 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>sequencia</title><style>body{margin:0;background:#fff}</style></head><body>
+<svg id="diagrama" xmlns="http://www.w3.org/2000/svg" width="1490" height="1121" viewBox="0 0 1490 1121" font-family="Arial, Helvetica, sans-serif"><rect width="1490" height="1121" fill="#fff"/><defs>
+<marker id="aberta" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#111" stroke-width="1.4"/></marker>
+<marker id="cheia" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#111"/></marker>
+</defs>
+<line x1="110" y1="90" x2="110" y2="1095" stroke="#111" stroke-width="1.2" stroke-dasharray="8 6" />
+<rect x="0" y="30" width="220" height="60" fill="#e8e8e8" stroke="#111" stroke-width="1.8"/>
+<text x="110" y="67" font-size="19" text-anchor="middle" font-weight="700" font-style="normal" fill="#111">Professor</text>
+<line x1="430" y1="90" x2="430" y2="1095" stroke="#111" stroke-width="1.2" stroke-dasharray="8 6" />
+<rect x="320" y="30" width="220" height="60" fill="#e8e8e8" stroke="#111" stroke-width="1.8"/>
+<text x="430" y="67" font-size="19" text-anchor="middle" font-weight="700" font-style="normal" fill="#111">Registrar (página)</text>
+<line x1="760" y1="90" x2="760" y2="1095" stroke="#111" stroke-width="1.2" stroke-dasharray="8 6" />
+<rect x="650" y="30" width="220" height="60" fill="#e8e8e8" stroke="#111" stroke-width="1.8"/>
+<text x="760" y="67" font-size="19" text-anchor="middle" font-weight="700" font-style="normal" fill="#111">AppDbContext</text>
+<line x1="1060" y1="90" x2="1060" y2="1095" stroke="#111" stroke-width="1.2" stroke-dasharray="8 6" />
+<rect x="950" y="30" width="220" height="60" fill="#e8e8e8" stroke="#111" stroke-width="1.8"/>
+<text x="1060" y="67" font-size="19" text-anchor="middle" font-weight="700" font-style="normal" fill="#111">Aula</text>
+<line x1="1340" y1="90" x2="1340" y2="1095" stroke="#111" stroke-width="1.2" stroke-dasharray="8 6" />
+<rect x="1230" y="30" width="220" height="60" fill="#e8e8e8" stroke="#111" stroke-width="1.8"/>
+<text x="1340" y="67" font-size="19" text-anchor="middle" font-weight="700" font-style="normal" fill="#111">Banco (SQLite)</text>
+<line x1="110" y1="135" x2="430" y2="135" stroke="#111" stroke-width="1.6"  marker-end="url(#cheia)"/>
+<rect x="116.60000000000002" y="107" width="306.79999999999995" height="23" fill="#fff"/><text x="270" y="123" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">abre a aula: GET /Chamada/Registrar/{id}</text>
+<line x1="430" y1="183" x2="760" y2="183" stroke="#111" stroke-width="1.6"  marker-end="url(#cheia)"/>
+<rect x="479.2" y="155" width="231.6" height="23" fill="#fff"/><text x="595" y="171" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">consulta aula, faltas e alunos</text>
+<line x1="760" y1="231" x2="1340" y2="231" stroke="#111" stroke-width="1.6"  marker-end="url(#cheia)"/>
+<rect x="926.6800000000001" y="203" width="246.64" height="23" fill="#fff"/><text x="1050" y="219" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">SELECT em Aulas, Faltas e Alunos</text>
+<line x1="1340" y1="279" x2="760" y2="279" stroke="#111" stroke-width="1.6" stroke-dasharray="8 6" marker-end="url(#aberta)"/>
+<rect x="1013.16" y="251" width="73.67999999999999" height="23" fill="#fff"/><text x="1050" y="267" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">registros</text>
+<line x1="760" y1="327" x2="430" y2="327" stroke="#111" stroke-width="1.6" stroke-dasharray="8 6" marker-end="url(#aberta)"/>
+<rect x="509.28" y="299" width="171.44" height="23" fill="#fff"/><text x="595" y="315" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">aula e alunos da turma</text>
+<line x1="430" y1="375" x2="1060" y2="375" stroke="#111" stroke-width="1.6"  marker-end="url(#cheia)"/>
+<rect x="644.24" y="347" width="201.51999999999998" height="23" fill="#fff"/><text x="745" y="363" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">PodeRegistrarChamada(hoje)</text>
+<line x1="1060" y1="423" x2="430" y2="423" stroke="#111" stroke-width="1.6" stroke-dasharray="8 6" marker-end="url(#aberta)"/>
+<rect x="670.56" y="395" width="148.88" height="23" fill="#fff"/><text x="745" y="411" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">verdadeiro ou falso</text>
+<line x1="430" y1="517" x2="110" y2="517" stroke="#111" stroke-width="1.6" stroke-dasharray="8 6" marker-end="url(#aberta)"/>
+<rect x="146.68" y="489" width="246.64" height="23" fill="#fff"/><text x="270" y="505" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">avisa que a data é futura (RN05)</text>
+<line x1="24" y1="547" x2="1464" y2="547" stroke="#555" stroke-dasharray="8 6"/>
+<text x="96" y="566" font-size="15" text-anchor="start" font-weight="400" font-style="italic" fill="#111">[data igual ou anterior a hoje]</text>
+<line x1="430" y1="611" x2="110" y2="611" stroke="#111" stroke-width="1.6" stroke-dasharray="8 6" marker-end="url(#aberta)"/>
+<rect x="120.36000000000001" y="583" width="299.28" height="23" fill="#fff"/><text x="270" y="599" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">lista de alunos, todos presentes (RN06)</text>
+<line x1="110" y1="659" x2="430" y2="659" stroke="#111" stroke-width="1.6"  marker-end="url(#cheia)"/>
+<rect x="157.96" y="631" width="224.07999999999998" height="23" fill="#fff"/><text x="270" y="647" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">marca as faltas e salva: POST</text>
+<line x1="430" y1="707" x2="760" y2="707" stroke="#111" stroke-width="1.6"  marker-end="url(#cheia)"/>
+<rect x="452.88" y="679" width="284.24" height="23" fill="#fff"/><text x="595" y="695" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">consulta a aula e confere RN05 e RN07</text>
+<line x1="430" y1="755" x2="760" y2="755" stroke="#111" stroke-width="1.6"  marker-end="url(#cheia)"/>
+<rect x="464.16" y="727" width="261.67999999999995" height="23" fill="#fff"/><text x="595" y="743" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">Faltas.RemoveRange(faltas antigas)</text>
+<line x1="430" y1="803" x2="1060" y2="803" stroke="#111" stroke-width="1.6"  marker-end="url(#cheia)"/>
+<rect x="591.6" y="775" width="306.79999999999995" height="23" fill="#fff"/><text x="745" y="791" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">RegistrarChamada(alunosFaltantes, agora)</text>
+<line x1="430" y1="851" x2="760" y2="851" stroke="#111" stroke-width="1.6"  marker-end="url(#cheia)"/>
+<rect x="524.32" y="823" width="141.35999999999999" height="23" fill="#fff"/><text x="595" y="839" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">SaveChangesAsync()</text>
+<line x1="760" y1="899" x2="1340" y2="899" stroke="#111" stroke-width="1.6"  marker-end="url(#cheia)"/>
+<rect x="889.08" y="871" width="321.84" height="23" fill="#fff"/><text x="1050" y="887" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">DELETE e INSERT em Faltas, UPDATE em Aulas</text>
+<line x1="1340" y1="947" x2="760" y2="947" stroke="#111" stroke-width="1.6" stroke-dasharray="8 6" marker-end="url(#aberta)"/>
+<rect x="1005.64" y="919" width="88.72" height="23" fill="#fff"/><text x="1050" y="935" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">confirmação</text>
+<line x1="760" y1="995" x2="430" y2="995" stroke="#111" stroke-width="1.6" stroke-dasharray="8 6" marker-end="url(#aberta)"/>
+<rect x="520.56" y="967" width="148.88" height="23" fill="#fff"/><text x="595" y="983" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">alterações gravadas</text>
+<line x1="430" y1="1043" x2="110" y2="1043" stroke="#111" stroke-width="1.6" stroke-dasharray="8 6" marker-end="url(#aberta)"/>
+<rect x="154.2" y="1015" width="231.6" height="23" fill="#fff"/><text x="270" y="1031" font-size="16" text-anchor="middle" font-weight="400" font-style="normal" fill="#111">mensagem "Chamada registrada."</text>
+<rect x="24" y="459" width="1440" height="614" fill="none" stroke="#555" stroke-width="1.4"/>
+<rect x="24" y="459" width="60" height="26" fill="#e8e8e8" stroke="#555"/>
+<text x="54" y="478" font-size="15" text-anchor="middle" font-weight="700" font-style="normal" fill="#111">alt</text>
+<text x="96" y="478" font-size="15" text-anchor="start" font-weight="400" font-style="italic" fill="#111">[data futura]</text>
+</svg></body></html>
