@@ -12,7 +12,7 @@ A ideia do sistema foi retomada de um plano de negócios elaborado anteriormente
 
 ## Levantamento de informações
 
-[PENDENTE: técnica usada, quando, com quem ou em quais sistemas, como o processo é feito hoje e o que foi descoberto. O arquivo `relatorio/insumos/levantamento.md` está em branco, e este conteúdo depende do levantamento real exigido no Passo 0.]
+O levantamento foi feito por meio de uma conversa com um assistente de coordenação de uma escola de ensino fundamental, que atende os anos iniciais e finais. A escola não usava nenhum sistema para o controle de frequência. O trabalho era feito em planilhas do Excel e por envio de e-mail. Com base nisso, definiu-se que o sistema deve reunir em um só lugar os cadastros, a chamada e o cálculo da frequência.
 
 ## Validação do tema
 

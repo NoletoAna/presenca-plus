@@ -54,7 +54,7 @@ O limite de 75% da RN02 vem da frequência mínima exigida pela LDB (BRASIL, 199
 
 ## Diagrama de casos de uso
 
-O sistema tem dois atores: Coordenação e Professor. Os casos de uso UC02 a UC06 incluem o UC01, pois exigem usuário autenticado. A Figura X apresenta o diagrama.
+Os casos de uso especificam o comportamento esperado, isto é, o que deve acontecer, e não o método exato para isso (VISUAL PARADIGM, c2026b). O sistema tem dois atores: Coordenação e Professor. Os casos de uso UC02 a UC06 incluem o UC01, pois exigem usuário autenticado. A Figura X apresenta o diagrama.
 
 ![Figura X — Diagrama de casos de uso](../img/uc.png)
 

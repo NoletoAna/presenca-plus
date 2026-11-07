@@ -2,13 +2,13 @@
 
 ## Ambiente
 
-O sistema foi desenvolvido em C# com .NET 10 (SDK 10.0.400), usando ASP.NET Core Razor Pages, modelo em que cada página reúne a tela e o código que a atende (MICROSOFT, 2026). A interface usa o Bootstrap incluído no template do projeto. O código é versionado com Git.
+O sistema foi desenvolvido em C# com .NET 10 (SDK 10.0.400). O .NET é uma plataforma gratuita, multiplataforma e de código aberto (MICROSOFT, 2026a). A parte web usa o ASP.NET Core, framework para aplicações web modernas (MICROSOFT, 2026c), com Razor Pages, modelo em que cada página reúne a tela e o código que a atende (MICROSOFT, 2026d). A interface usa o Bootstrap, kit de ferramentas de front-end incluído no template do projeto (BOOTSTRAP, [202-]). O login usa autenticação por cookie, sem o ASP.NET Core Identity (MICROSOFT, 2026e). O código é versionado com Git (CHACON; STRAUB, 2014).
 
 Repositório: [PENDENTE: link do GitHub]
 
 ## Banco de dados
 
-O banco de dados é o SQLite, acessado pelo Entity Framework Core 10.0.14, que faz o mapeamento entre as classes e as tabelas (MICROSOFT, 2025). As tabelas `Usuarios`, `Turmas`, `Alunos`, `Aulas` e `Faltas` foram criadas por uma migration, com base no modelo da Fase 2. A migration é aplicada ao iniciar o sistema. Na primeira execução, são criados dados fictícios de demonstração. As senhas são guardadas somente como hash.
+O banco de dados é o SQLite, biblioteca que implementa um mecanismo de banco de dados SQL sem servidor e sem configuração (SQLITE, 2025). O acesso é feito pelo Entity Framework Core 10.0.14, que faz o mapeamento entre as classes e as tabelas (MICROSOFT, 2025). As tabelas `Usuarios`, `Turmas`, `Alunos`, `Aulas` e `Faltas` foram criadas por uma migration, recurso que atualiza o esquema do banco para mantê-lo de acordo com o modelo de dados (MICROSOFT, 2026b), com base no modelo da Fase 2. A migration é aplicada ao iniciar o sistema. Na primeira execução, são criados dados fictícios de demonstração. As senhas são guardadas somente como hash.
 
 ## Funcionalidade 1: cadastro de alunos (RF03)
 

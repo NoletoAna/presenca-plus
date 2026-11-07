@@ -2,7 +2,7 @@
 
 ## Diagrama de classes
 
-O diagrama de classes da Figura X mostra as classes do sistema. `Usuario`, `Turma`, `Aluno`, `Aula` e `Falta` representam os dados guardados. `Aula` concentra as regras da chamada, nos métodos `PodeRegistrarChamada` (RN05) e `RegistrarChamada` (RN06). `FrequenciaService` gera o relatório, e cada linha do resultado é um `LinhaFrequencia`, que calcula o percentual (RN01) e a situação (RN02). `AppDbContext` faz o acesso ao banco de dados.
+Os diagramas seguem a UML, linguagem gráfica usada para visualizar, especificar, construir e documentar artefatos de sistemas (OBJECT MANAGEMENT GROUP, 2017). O diagrama de classes da Figura X mostra as classes do sistema. `Usuario`, `Turma`, `Aluno`, `Aula` e `Falta` representam os dados guardados. `Aula` concentra as regras da chamada, nos métodos `PodeRegistrarChamada` (RN05) e `RegistrarChamada` (RN06). `FrequenciaService` gera o relatório, e cada linha do resultado é um `LinhaFrequencia`, que calcula o percentual (RN01) e a situação (RN02). `AppDbContext` faz o acesso ao banco de dados.
 
 ![Figura X — Diagrama de classes](../img/classes.png)
 
@@ -84,7 +84,7 @@ Fonte: elaborado pelo autor (2026).
 
 ## Diagrama de sequência
 
-O caso de uso principal é o UC05, Registrar chamada. A Figura X mostra a troca de mensagens entre o Professor, a página `Registrar`, o `AppDbContext`, a classe `Aula` e o banco de dados. Antes de exibir ou salvar a chamada, a página consulta `PodeRegistrarChamada`. Em aula futura, o sistema avisa e não permite o registro (RN05). Ao salvar, as faltas anteriores são removidas e as novas são gravadas (RN06).
+O diagrama de sequência detalha como as operações são realizadas (VISUAL PARADIGM, c2026a). O caso de uso principal é o UC05, Registrar chamada. A Figura X mostra a troca de mensagens entre o Professor, a página `Registrar`, o `AppDbContext`, a classe `Aula` e o banco de dados. Antes de exibir ou salvar a chamada, a página consulta `PodeRegistrarChamada`. Em aula futura, o sistema avisa e não permite o registro (RN05). Ao salvar, as faltas anteriores são removidas e as novas são gravadas (RN06).
 
 ![Figura X — Diagrama de sequência do UC05](../img/sequencia.png)
 

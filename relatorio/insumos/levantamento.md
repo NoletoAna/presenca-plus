@@ -1,15 +1,12 @@
 # Levantamento de informações (Passo 0)
 
-Preencha com o que você realmente fez. A janela J2 usa só o que estiver aqui.
+Registro das informações passadas pela Ana em 7 nov. 2026.
 
 ## Técnica usada
-(observação, conversa, pesquisa de sistemas semelhantes ou experiência própria)
+Conversa.
 
 ## Quando e com quem, ou em quais sistemas
+Com um assistente de coordenação de uma escola de ensino fundamental 1 e 2. A data da conversa não foi informada.
 
 ## Como isso é feito hoje
-
-## O que descobri e o que o sistema precisa fazer
-
-## Materiais de aula consultados
-(para citar nas referências)
+A escola não usava nenhum sistema, somente planilhas no Excel e envio de e-mail.

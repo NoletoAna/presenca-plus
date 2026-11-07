@@ -6,4 +6,4 @@ Algumas dificuldades técnicas surgiram durante o desenvolvimento. A exigência 
 
 O protótipo tem limitações. Atende a uma única escola, com dois perfis, e os testes foram manuais, com dados fictícios, em computador local. No celular, o relatório exige deslizar a tabela para ver a coluna Situação.
 
-[PENDENTE: o que a autora aprendeu com o projeto, em relação às disciplinas do curso, e quais dificuldades pessoais enfrentou.]
+Com o projeto, foi possível aprender sobre levantamento de requisitos, diagramação, prototipação de telas, desenvolvimento front-end e .NET. Na prática, o sistema foi construído em C#, com ASP.NET Core Razor Pages nas telas e Entity Framework Core na ligação com o banco SQLite.
