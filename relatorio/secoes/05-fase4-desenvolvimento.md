@@ -4,7 +4,7 @@
 
 O sistema foi desenvolvido em C# com .NET 10 (SDK 10.0.400). O .NET é uma plataforma gratuita, multiplataforma e de código aberto (MICROSOFT, 2026a). A parte web usa o ASP.NET Core, framework para aplicações web modernas (MICROSOFT, 2026c), com Razor Pages, modelo em que cada página reúne a tela e o código que a atende (MICROSOFT, 2026d). A interface usa o Bootstrap, kit de ferramentas de front-end incluído no template do projeto (BOOTSTRAP, [202-]). O login usa autenticação por cookie, sem o ASP.NET Core Identity (MICROSOFT, 2026e). O código é versionado com Git (CHACON; STRAUB, 2014).
 
-Repositório: [PENDENTE: link do GitHub]
+Repositório: https://github.com/NoletoAna/presenca-plus
 
 ## Banco de dados
 
