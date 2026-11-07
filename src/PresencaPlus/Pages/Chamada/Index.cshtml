@@ -1,0 +1,43 @@
+@page
+@model PresencaPlus.Pages.Chamada.IndexModel
+@{
+    ViewData["Title"] = "Minhas aulas";
+}
+
+<h1 class="h3 mb-3">Minhas aulas</h1>
+
+@if (TempData["Mensagem"] is string mensagem)
+{
+    <div class="alert alert-success" role="alert">@mensagem</div>
+}
+
+<div class="table-responsive">
+    <table class="table table-striped align-middle">
+        <thead>
+            <tr><th>Data</th><th>Horário</th><th>Turma</th><th>Disciplina</th><th>Situação</th><th></th></tr>
+        </thead>
+        <tbody>
+            @foreach (var a in Model.Aulas)
+            {
+                var situacao = Model.Situacao(a);
+                <tr>
+                    <td>@a.Data.ToString("dd/MM/yyyy")</td>
+                    <td>@a.Horario.ToString("HH:mm")</td>
+                    <td>@a.Turma.Nome</td>
+                    <td>@a.Disciplina</td>
+                    <td>@situacao</td>
+                    <td class="text-end text-nowrap">
+                        <a class="btn btn-sm btn-outline-primary" asp-page="Registrar" asp-route-id="@a.Id">
+                            @(situacao == "Registrada" ? "Rever" : situacao == "Pendente" ? "Fazer chamada" : "Abrir")
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@if (Model.Aulas.Count == 0)
+{
+    <p class="text-muted">Nenhuma aula atribuída a você.</p>
+}
