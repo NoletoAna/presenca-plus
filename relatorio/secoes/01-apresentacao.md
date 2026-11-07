@@ -8,7 +8,7 @@ O sistema escolhido é o Presença+, um sistema web para uma escola controlar as
 
 O controle de frequência é uma obrigação da escola. A Lei de Diretrizes e Bases da Educação Nacional estabelece que esse controle fica a cargo da escola e exige frequência mínima de 75% do total de horas letivas para aprovação (BRASIL, 1996, art. 24, VI). Um sistema que calcula esse percentual permite identificar a tempo os alunos em risco de reprovação por falta.
 
-[PENDENTE: motivo pessoal da escolha do tema, a ser informado pela autora.]
+A ideia do sistema foi retomada de um plano de negócios elaborado anteriormente pela autora. Esse plano partiu de um problema: muitas escolas ainda fazem a chamada em diário de papel ou em planilhas soltas, o que gera retrabalho e erros, e a coordenação só percebe o excesso de faltas de um aluno quando já é tarde. Para este projeto, a ideia foi reduzida às funções essenciais.
 
 ## Levantamento de informações
 
