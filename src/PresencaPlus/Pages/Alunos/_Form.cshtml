@@ -1,0 +1,20 @@
+@using Microsoft.AspNetCore.Mvc.Rendering
+@model Aluno
+
+<div class="mb-3">
+    <label asp-for="Matricula" class="form-label"></label>
+    <input asp-for="Matricula" class="form-control" />
+    <span asp-validation-for="Matricula" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="Nome" class="form-label"></label>
+    <input asp-for="Nome" class="form-control" />
+    <span asp-validation-for="Nome" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="TurmaId" class="form-label"></label>
+    <select asp-for="TurmaId" class="form-select" asp-items="@((IEnumerable<SelectListItem>)ViewData["Turmas"]!)">
+        <option value="0">Selecione</option>
+    </select>
+    <span asp-validation-for="TurmaId" class="text-danger"></span>
+</div>

@@ -1,0 +1,34 @@
+@using Microsoft.AspNetCore.Mvc.Rendering
+@model Aula
+
+<div class="mb-3">
+    <label asp-for="TurmaId" class="form-label"></label>
+    <select asp-for="TurmaId" class="form-select" asp-items="@((IEnumerable<SelectListItem>)ViewData["Turmas"]!)">
+        <option value="0">Selecione</option>
+    </select>
+    <span asp-validation-for="TurmaId" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="ProfessorId" class="form-label"></label>
+    <select asp-for="ProfessorId" class="form-select" asp-items="@((IEnumerable<SelectListItem>)ViewData["Professores"]!)">
+        <option value="0">Selecione</option>
+    </select>
+    <span asp-validation-for="ProfessorId" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="Disciplina" class="form-label"></label>
+    <input asp-for="Disciplina" class="form-control" />
+    <span asp-validation-for="Disciplina" class="text-danger"></span>
+</div>
+<div class="row">
+    <div class="col-6 mb-3">
+        <label asp-for="Data" class="form-label"></label>
+        <input asp-for="Data" type="date" asp-format="{0:yyyy-MM-dd}" class="form-control" />
+        <span asp-validation-for="Data" class="text-danger"></span>
+    </div>
+    <div class="col-6 mb-3">
+        <label asp-for="Horario" class="form-label"></label>
+        <input asp-for="Horario" type="time" asp-format="{0:HH:mm}" class="form-control" />
+        <span asp-validation-for="Horario" class="text-danger"></span>
+    </div>
+</div>

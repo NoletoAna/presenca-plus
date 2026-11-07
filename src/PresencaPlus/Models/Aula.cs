@@ -19,9 +19,11 @@ public class Aula
     [StringLength(50, ErrorMessage = "A disciplina deve ter até 50 caracteres.")]
     public string Disciplina { get; set; } = "";
 
+    [Required(ErrorMessage = "Informe a data.")]
     public DateOnly Data { get; set; }
 
     [Display(Name = "Horário")]
+    [Required(ErrorMessage = "Informe o horário.")]
     public TimeOnly Horario { get; set; }
 
     public DateTime? ChamadaRegistradaEm { get; set; }

@@ -11,6 +11,7 @@ public class Turma
     public string Nome { get; set; } = "";
 
     [Display(Name = "Ano letivo")]
+    [Required(ErrorMessage = "Informe o ano letivo.")]
     [Range(2000, 2100, ErrorMessage = "Informe um ano letivo entre 2000 e 2100.")]
     public int AnoLetivo { get; set; }
 
