@@ -6,6 +6,10 @@ BRASIL. Lei n.º 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dad
 
 ELMASRI, Ramez; NAVATHE, Shamkant B. **Sistemas de banco de dados**. 6. ed. São Paulo: Pearson, 2011.
 
+MICROSOFT. **Overview of Entity Framework Core**. [S. l.]: Microsoft Learn, 2025. Disponível em: https://learn.microsoft.com/ef/core/. Acesso em: 7 nov. 2026.
+
+MICROSOFT. **Razor Pages architecture and concepts in ASP.NET Core**. [S. l.]: Microsoft Learn, 2026. Disponível em: https://learn.microsoft.com/aspnet/core/razor-pages/. Acesso em: 7 nov. 2026.
+
 PRESSMAN, Roger S.; MAXIM, Bruce R. **Engenharia de software**: uma abordagem profissional. 8. ed. Porto Alegre: AMGH, 2016.
 
 [PENDENTE: materiais de aula consultados, a serem informados pela autora.]
