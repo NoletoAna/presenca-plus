@@ -1,0 +1,40 @@
+@page
+@model PresencaPlus.Pages.Aulas.IndexModel
+@{
+    ViewData["Title"] = "Aulas";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h3 mb-0">Aulas</h1>
+    <a class="btn btn-primary" asp-page="Criar">Nova aula</a>
+</div>
+
+@if (TempData["Mensagem"] is string mensagem)
+{
+    <div class="alert alert-success" role="alert">@mensagem</div>
+}
+
+<div class="table-responsive">
+    <table class="table table-striped align-middle">
+        <thead>
+            <tr><th>Data</th><th>Horário</th><th>Turma</th><th>Disciplina</th><th>Professor</th><th>Chamada</th><th></th></tr>
+        </thead>
+        <tbody>
+            @foreach (var a in Model.Aulas)
+            {
+                <tr>
+                    <td>@a.Data.ToString("dd/MM/yyyy")</td>
+                    <td>@a.Horario.ToString("HH:mm")</td>
+                    <td>@a.Turma.Nome</td>
+                    <td>@a.Disciplina</td>
+                    <td>@a.Professor.Nome</td>
+                    <td>@(a.ChamadaRegistradaEm is null ? "Pendente" : "Registrada")</td>
+                    <td class="text-end text-nowrap">
+                        <a class="btn btn-sm btn-outline-primary" asp-page="Editar" asp-route-id="@a.Id">Editar</a>
+                        <a class="btn btn-sm btn-outline-danger" asp-page="Excluir" asp-route-id="@a.Id">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

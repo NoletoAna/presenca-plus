@@ -1,0 +1,20 @@
+@page "{id:int}"
+@model PresencaPlus.Pages.Aulas.EditarModel
+@{
+    ViewData["Title"] = "Editar aula";
+    ViewData["Turmas"] = Model.Turmas;
+    ViewData["Professores"] = Model.Professores;
+}
+
+<h1 class="h3 mb-3">Editar aula</h1>
+
+<form method="post" class="col-12 col-md-6">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <partial name="_Form" for="Aula" />
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a class="btn btn-outline-secondary" asp-page="Index">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

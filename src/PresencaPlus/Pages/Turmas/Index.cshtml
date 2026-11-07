@@ -1,0 +1,39 @@
+@page
+@model PresencaPlus.Pages.Turmas.IndexModel
+@{
+    ViewData["Title"] = "Turmas";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h3 mb-0">Turmas</h1>
+    <a class="btn btn-primary" asp-page="Criar">Nova turma</a>
+</div>
+
+@if (TempData["Mensagem"] is string mensagem)
+{
+    <div class="alert alert-success" role="alert">@mensagem</div>
+}
+
+<div class="table-responsive">
+    <table class="table table-striped align-middle">
+        <thead>
+            <tr><th>Nome</th><th>Ano letivo</th><th>Turno</th><th>Alunos</th><th>Aulas</th><th></th></tr>
+        </thead>
+        <tbody>
+            @foreach (var t in Model.Linhas)
+            {
+                <tr>
+                    <td>@t.Turma.Nome</td>
+                    <td>@t.Turma.AnoLetivo</td>
+                    <td>@t.Turma.Turno</td>
+                    <td>@t.Alunos</td>
+                    <td>@t.Aulas</td>
+                    <td class="text-end text-nowrap">
+                        <a class="btn btn-sm btn-outline-primary" asp-page="Editar" asp-route-id="@t.Turma.Id">Editar</a>
+                        <a class="btn btn-sm btn-outline-danger" asp-page="Excluir" asp-route-id="@t.Turma.Id">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,54 @@
+@page
+@model PresencaPlus.Pages.Alunos.IndexModel
+@{
+    ViewData["Title"] = "Alunos";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h3 mb-0">Alunos</h1>
+    <a class="btn btn-primary" asp-page="Criar">Novo aluno</a>
+</div>
+
+@if (TempData["Mensagem"] is string mensagem)
+{
+    <div class="alert alert-success" role="alert">@mensagem</div>
+}
+
+<form method="get" class="row g-2 mb-3">
+    <div class="col-8 col-md-4">
+        <label for="turmaId" class="form-label">Filtrar por turma</label>
+        <select id="turmaId" name="turmaId" class="form-select" asp-items="Model.Turmas">
+            <option value="">Todas</option>
+        </select>
+    </div>
+    <div class="col-4 col-md-2 d-flex align-items-end">
+        <button type="submit" class="btn btn-outline-primary w-100">Filtrar</button>
+    </div>
+</form>
+
+<div class="table-responsive">
+    <table class="table table-striped align-middle">
+        <thead>
+            <tr><th>Matrícula</th><th>Nome</th><th>Turma</th><th></th></tr>
+        </thead>
+        <tbody>
+            @foreach (var a in Model.Alunos)
+            {
+                <tr>
+                    <td>@a.Matricula</td>
+                    <td>@a.Nome</td>
+                    <td>@a.Turma.Nome</td>
+                    <td class="text-end text-nowrap">
+                        <a class="btn btn-sm btn-outline-primary" asp-page="Editar" asp-route-id="@a.Id">Editar</a>
+                        <a class="btn btn-sm btn-outline-danger" asp-page="Excluir" asp-route-id="@a.Id">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@if (Model.Alunos.Count == 0)
+{
+    <p class="text-muted">Nenhum aluno encontrado.</p>
+}
