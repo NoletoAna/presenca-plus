@@ -12,7 +12,7 @@ A ideia do sistema foi retomada de um plano de negócios elaborado anteriormente
 
 ## Levantamento de informações
 
-O levantamento foi feito por meio de uma conversa com um assistente de coordenação de uma escola de ensino fundamental, que atende os anos iniciais e finais. A escola não usava nenhum sistema para o controle de frequência. O trabalho era feito em planilhas do Excel e por envio de e-mail. Com base nisso, definiu-se que o sistema deve reunir em um só lugar os cadastros, a chamada e o cálculo da frequência.
+O levantamento foi feito no início do semestre, por meio de uma conversa com um assistente de coordenação de uma escola de ensino fundamental, que atende os anos iniciais e finais. A escola não usava nenhum sistema para o controle de frequência. O trabalho era feito em planilhas do Excel e por envio de e-mail. Com base nisso, definiu-se que o sistema deve reunir em um só lugar os cadastros, a chamada e o cálculo da frequência.
 
 ## Validação do tema
 

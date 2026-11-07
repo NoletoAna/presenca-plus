@@ -2,7 +2,6 @@
 
 ## Conferências antes de postar
 
-- [ ] Levantamento (seção 1.3): acrescente quando a conversa aconteceu.
 - [ ] Dificuldades (seção 7): o segundo parágrafo é técnico. Apague o que não foi seu e acrescente o que foi difícil para você.
 - [ ] Materiais de aula: nenhum está nas referências. O PDF diz que eles "podem e devem" ser referenciados.
 - [ ] Capa: confira se o nome da disciplina é mesmo "Projeto Integrado".
